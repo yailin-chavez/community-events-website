@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* > * {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-dark: #151c35;
+  --color-secodary-dark: #464c70;
+  --color-primary: #ee709d;
+  --color-text: #8297e2;
+  --color-light: #ebebfb;
+}
+
+.container {
+  min-height: 844px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.board {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark);
+  text-align: center;
+  border-radius: 8px;
+  padding: 4em 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+.swiper {
+  width: 800px;
+  height: auto;
+}
+
+.swiper .swiper-slide .flex {
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper .swiper-slide .comments {
+  background-color: var(--color-light);
+  padding: 1.5em 2em;
+  width: 60%;
+  border-radius: 5px;
+  font-size: 0.9em;
+  position: relative;
+}
+
+.swiper .swiper-slide .comments::after {
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid var(--color-light);
+  z-index: -99;
+}
+
+.swiper .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.swiper .profile img {
+  width: 30%;
+  border-radius: 50%;
+  border: 5px solid var(--color-primary);
+  margin: 10px 0;
+}
+
+.icon {
+  display: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.swiper .profile > a {
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+.swiper .profile > span {
+  color: var(--color-text);
+  font-size: 0.8em;
+}
+
+.swiper .swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-text);
+  display: none;
+}
+
+@media (min-width: 320px) {
+  .board {
+    width: auto;
+  }
+
+  .swiper {
+    width: 320px;
+  }
+
+  .board > h1,
+  p {
+    padding: 0 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .board {
+    width: 100%;
+  }
+
+  .swiper {
+    width: 600px;
+  }
+
+  .swiper .swiper-button-prev,
+  .swiper-button-next {
+    display: initial;
+  }
+}

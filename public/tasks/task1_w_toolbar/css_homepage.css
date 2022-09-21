@@ -1,0 +1,23 @@
+.background {
+    background-color: #050026;
+}
+
+.text {
+    color:#EADAFF;
+}
+
+.back {
+    color:#EADAFF;
+}
+
+
+.center {
+    text-align: center;
+    border: 3px solid green;
+  }
+.bigpoop {
+    height: 100%;
+    width: 19.6%;
+    background-color: #35530a;
+    border-color: #EADAFF;
+}

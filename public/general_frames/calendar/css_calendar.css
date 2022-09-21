@@ -1,0 +1,15 @@
+body.background {
+    background-image: linear-gradient(to bottom,#62418B 5%,#362160 85%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.back {
+    color:#EADAFF;
+}
+
+.text {
+    color:#EADAFF;
+}

@@ -1,0 +1,60 @@
+.background-color{
+    height:150vh;
+    /*imitation for up-down gradient*/
+    background-image: linear-gradient(to bottom,#603F8B 5%,#754C73 20%,#634878 40%,#210A51 85%);
+}
+
+.header{
+    min-height:20vh;
+    width:100vw;
+    padding:0;
+    margin:0;
+    border:0;
+    background-color: #17002E;
+}
+
+.container{
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+.text {
+    color:#EADAFF;
+}
+.title{
+    position: relative;
+    top:5vh;
+    padding:0;
+}
+.icon{
+    position: relative;
+    left:6%;
+    top:25%;
+}
+.list_title{
+    font-size:1em;
+}
+.list_info{
+    font-size:.5em;
+}
+
+.subtitle{
+    position: relative;
+    margin:5%;
+    top:10%;
+    left:8%;
+    font-size: 1.15em;
+}
+
+.body_text{
+    position: relative;
+    top:25%;
+    left:8%;
+    min-height:15vh;
+    width:75vw;
+    padding:4%;
+    margin:5%;
+    border-radius: 4vw;
+    background-color: #17002E;
+}

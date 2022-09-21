@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <!-- let's include the css file for bootstrap, then our custom css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style> 
+    body {background-color: #050026;}
+    .back {background-color:#EADAFF;}
+    </style>
+
+</head>
+<body>
+
+    <header class="container-fluid">
+        <div class="container text-center" id="searchBox">
+          <h1 class="h1" style="color: #EADAFF">Bando</h1>
+          <div class="form col-xs-12">
+          <input class="col-xs-9" id="searchBar" type="text" placeholder="search" />
+            <span style="color: #EADAFF" class="glyphicon glyphicon-search col-xs-1" data-toggle="tooltip" title="Search"></span>
+            <span style="color: #EADAFF" class="glyphicon bar col-xs-1" id="submit"><b>|</b></span>
+            <a style="color: #EADAFF" href="https://en.wikipedia.org/wiki/Special:Random">94704</a>
+          </div>
+        </div>
+        </div>
+      </header>
+      <div id="mainBody" class="container text-center">
+        <ul id="results">
+        </ul>
+      </div>
+      <footer class="text-center">
+      
+      </footer>
+    <!-- BACK BUTTON
+        <div class="container">
+        <div class="row">
+            <a href="/" class="btn back float-right col-1">Back</a>
+        </div>
+    </div>
+    -->
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div style="color: #EADAFF" class="col-8 h4">Upcoming Near You</div>
+      </div>
+    <!-- CAROUSEL ONE -->
+    <div class="container">
+        <div id="firstCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#firstCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#firstCarousel" data-slide-to="1"></li>
+                <li data-target="#firstCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img id="imgone" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+               <h3><span id='artistone'></span></h3>
+                    <p><span id='dateone'></span></p>
+                    <p><a id="urlone" class="btn btn-primary" href="#" role="button">More Info</a></p>
+                </div>
+            </div>
+            <div class="item">
+              <img id="imgtwo" alt="Chicago" style="width:100%;">
+              <div class="carousel-caption">
+                <h3><span id='artisttwo'></span></h3>
+                <p><span id='datetwo'></span></p>
+                <p><a id="urltwo" class="btn btn-primary" href="#" role="button">More Info</a></p>
+            </div>
+            </div>
+            <div class="item">
+              <img id="imgthree" alt="New York" style="width:100%;">
+              <div class="carousel-caption">
+                <h4><span id='artistthree'></span></h4>
+                <p><span id='datethree'></span></p>
+                <p><a id="urlthree" class="btn btn-primary" href="#" role="button">More Info</a></p>
+              </div>
+            </div> 
+          </div>
+    
+          <a class="left carousel-control" href="#firstCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#firstCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </div>
+    
+    <br>
+    <div class="row">
+        <div class="col-2"></div>
+        <div style="color: #EADAFF" class="col-8 h4">Discover More Events</div>
+    <!-- CAROUSEL TWO -->
+    <br>
+    <div class="container">
+        <div id="secondCarousel" class="carousel slide" data-interval="false">
+          <div class="carousel-inner">
+            <div class="item active">
+              <img id="imgfour" alt="Los Angeles" style="width:100%;">
+              <div class="carousel-caption">
+               <h3><span id='artistfour'></span></h3>
+                    <p><span id='datefour'></span></p>
+                    <p><a id="urlfour" class="btn btn-primary" href="#" role="button">More Info</a></p>
+                </div>
+            </div>
+            <div class="item">
+              <img id="imgfive" alt="Chicago" style="width:100%;">
+              <div class="carousel-caption">
+                <h3><span id='artistfive'></span></h3>
+                <p><span id='datefive'></span></p>
+                <p><a id="urlfive" class="btn btn-primary" href="#" role="button">More Info</a></p>
+            </div>
+            </div>
+            <div class="item">
+              <img id="imgsix" alt="New York" style="width:100%;">
+              <div class="carousel-caption">
+                <h3><span id='artistsix'></span></h3>
+                <p><span id='datesix'></span></p>
+                <p><a id="urlsix" class="btn btn-primary" href="#" role="button">More Info</a></p>
+              </div>
+            </div> 
+          </div>
+    
+          <a class="left carousel-control" href="#secondCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#secondCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </div>
+
+<!--START OF TOOLBAR-->
+<div class="center" id="toolbar" style="position: fixed; border-color:#35530a; bottom: 0px; left: 0px; width: 100%; height: 5%; color: #35530a; background: #35530a;">
+  <button type="button" class="bigpoop" style="color: #EADAFF">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-file-text" viewBox="0 0 16 16">
+      <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+      <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+    </svg>
+  </button>
+  <button type="button" class="bigpoop" style="color: #EADAFF">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+      <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+    </svg>
+  </button>
+  <button type="button" class="bigpoop" style="color: #EADAFF">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+      <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+    </svg>
+  </button>
+  <button type="button" class="bigpoop" style="color: #EADAFF">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+    </svg>
+  </button>
+  <button type="button" class="bigpoop" style="color: #EADAFF">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+    </svg>
+  </button>
+</div>
+
+    <script>
+        const api_url_upcoming_near_you = 'https://app.ticketmaster.com/discovery/v2/events?apikey=Nv8QGqhh6lyGnb5gaQsfGh75IGW5NABN&venueId=KovZpZAFadlA&locale=*&countryCode=US'
+        const api_url_discover_more_events = 'https://app.ticketmaster.com/discovery/v2/events?apikey=Nv8QGqhh6lyGnb5gaQsfGh75IGW5NABN&keyword=concert&locale=*&city=San%20Francisco&countryCode=US'
+        async function getISS1() {
+            const response = await fetch(api_url_upcoming_near_you);
+            const data = await response.json();
+            console.log(data._embedded.events[0].name);
+            console.log(data._embedded.events[0].images[8].url);
+            console.log(data._embedded.events[1].images[8].url);
+            console.log(data._embedded.events[4].images[8].url);
+            console.log(data._embedded.events[0].dates.start.localDate, data._embedded.events[0].dates.start.localTime);
+
+
+            document.getElementById('artistone').textContent = data._embedded.events[0].name;
+            document.getElementById('artisttwo').textContent = data._embedded.events[1].name;
+            document.getElementById('artistthree').textContent = data._embedded.events[4].name;
+            
+            document.getElementById('dateone').textContent = "Greek Theater UC Berkeley: " + data._embedded.events[0].dates.start.localDate + " at " + data._embedded.events[0].dates.start.localTime
+            document.getElementById('datetwo').textContent = "Greek Theater UC Berkeley: " + data._embedded.events[1].dates.start.localDate + " at " + data._embedded.events[1].dates.start.localTime
+            document.getElementById('datethree').textContent = "Greek Theater UC Berkeley: " + data._embedded.events[4].dates.start.localDate + " at " + data._embedded.events[2].dates.start.localTime
+
+            document.getElementById("urlone").href = data._embedded.events[0].url;
+            document.getElementById("urltwo").href = data._embedded.events[1].url;
+            document.getElementById("urlthree").href = data._embedded.events[4].url;
+            
+            document.getElementById("imgone").src = data._embedded.events[0].images[2].url;
+            document.getElementById("imgtwo").src = data._embedded.events[1].images[4].url;
+            document.getElementById("imgthree").src = data._embedded.events[4].images[6].url;
+        }
+        async function getISS2() {
+            const response = await fetch(api_url_discover_more_events);
+            const data = await response.json();
+
+            document.getElementById('artistfour').textContent = data._embedded.events[5].name;
+            document.getElementById('artistfive').textContent = data._embedded.events[4].name;
+            document.getElementById('artistsix').textContent = data._embedded.events[6].name;
+            
+            document.getElementById('datefour').textContent = "The Fillmore: " + data._embedded.events[0].dates.start.localDate + " at " + data._embedded.events[5].dates.start.localTime
+            document.getElementById('datefive').textContent = "Davies Symphony Hall: " + data._embedded.events[1].dates.start.localDate + " at " + data._embedded.events[4].dates.start.localTime
+            document.getElementById('datesix').textContent = "The Fillmore: " + data._embedded.events[4].dates.start.localDate + " at " + data._embedded.events[6].dates.start.localTime
+
+            document.getElementById("urlfour").href = data._embedded.events[5].url;
+            document.getElementById("urlfive").href = data._embedded.events[4].url;
+            document.getElementById("urlsix").href = data._embedded.events[6].url;
+            
+            document.getElementById("imgfour").src = data._embedded.events[5].images[0].url;
+            document.getElementById("imgfive").src = data._embedded.events[4].images[4].url;
+            document.getElementById("imgsix").src = data._embedded.events[6].images[6].url;
+        }
+        getISS1()
+        getISS2()
+    </script>
+</body>
+</html>

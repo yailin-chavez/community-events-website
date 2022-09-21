@@ -1,0 +1,28 @@
+.center {
+    text-align: center;
+    border: 3px solid green;
+  }
+
+.bigpoop {
+  height: 100%;
+  width: 19.6%;
+  background-color: #3a3841;
+  border-color: #b7abc7;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .top-left {
+    position: absolute;
+    top: 160px;
+
+  }

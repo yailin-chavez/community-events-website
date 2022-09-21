@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- add Bootstrap 4 (from https://getbootstrap.com/docs/4.0/getting-started/download/)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="bootstrap/js/bootstrap.min.js" rel="stylesheet" media="screen">
+    <link href="bootstrap/js/bootstrap-modal.js" rel="stylesheet" media="screen">
+    <link href="bootstrap/js/bootstrap-transition.js" rel="stylesheet" media="screen">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="/Scripts/jquery-2.1.1.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <!--<script src="/Scripts/respond.js"></script>
+    <script src="/Scripts/Shared/site.js"></script> -->
+
+    <!-- add CSS StyleSheet-->
+    <link rel="stylesheet" type="text/css" href="/tasks/task2_report/css_report.css">
+
+    <!--Add FontAwesome-->
+    <script src="https://kit.fontawesome.com/d44414faa0.js" crossorigin="anonymous"></script>
+
+    <!-- add jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+
+<body class="background">
+    <div style="background-color:#450F7C">
+        <!--The container for the header-->
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-2">
+                    <a href="/index.html">
+                        <i class="fa-solid fa-angle-left fa-2x back"></i>
+                    </a>
+                </div>
+                <div class="col-8">
+                    <center><h1 class="text">Report an Issue</h1></center>
+                </div>
+                <div class="col-2">
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <br><br>
+    <!--The container for the input information-->
+    <div class="container">
+        <!--Container for User Info-->
+        <form action="" method="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-1">
+                        <h4 for="event" class="text" style="float:right;">Event:</h4>
+                    </div>
+                    <div class="col-5">
+                        <center>
+                            <input type="text" id="event_report" name="event" class="input-box"><br>
+                        </center>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-1">
+                        <h4 for="venue" class="text" style="float:right;">Venue:</h4>
+                    </div>
+                    <div class="col-5">
+                        <center>
+                            <input type="text" id="venue_report" name="venue" class="input-box"><br>
+                        </center>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-1">
+                        <h4 for="date" class="text" style="float:right;">Date:</h4>
+                    </div>
+                    <div class="col-5">
+                        <center>
+                            <input type="date" id="date_report" name="date" class="input-box"><br>
+                        </center>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-1">
+                        <h4 for="time" class="text" style="float:right;">Time:</h4>
+                    </div>
+                    <div class="col-5">
+                        <center>
+                            <input type="time" id="time_report" name="time" class="input-box"><br>
+                        </center>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-5">
+                        <center>
+                            <div>
+                                <input type="checkbox" id="happening-now" name="happening-now" value="happening-now">
+                                <label for="happening-now" class="text">Happening Now!</label><br>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-1">
+                        <h4 for="phone_number" class="text" style="float:right;">Phone:</h4>
+                    </div>
+                    <div class="col-5">
+                        <center>
+                            <input type="text" id="phone_number_report" name="phone_number" class="input-box"><br>
+                        </center>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            <br><br>
+            <!--Container for User Description-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8" >
+                        <center>
+                            <h4 for="description" class="text">Description:</h4>
+                        </center>
+                        
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <center>
+                            <textarea for="description" rows = "10" cols="36" class="input-box">
+                            </textarea>
+                        </center>
+                        <br>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                <center>
+                    <!--<input type="submit" id="submit-btn" data-toggle="modal" data-target="#confirmation-popup">-->
+                    <button type="button" id="submit-btn" class="btn btn-primary" data-toggle="modal" data-target="#confirmation-popup">
+                        Submit
+                    </button>
+                </center>
+                <br>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="confirmation-popup" class="modal" tabindex="-1" role="dialog" aria-labelledby="confirmation-popupLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="background-color: #1c0335;">
+                <div class="modal-body">
+                    <div class="panel-title text-center" style="width: 99%; padding: 1%;">
+                        <h4 class="title" style="color:rgb(255, 255, 255);">Are you sure you want to submit?</h4>
+                    </div>
+                    <br>
+                    <!--<center><button id="confirm-yes">Yes</button><button id="confirm-no">No</button></center>-->
+                </div>
+                <div class="modal-footer">
+                    <a href="/tasks/task2_report/report_confirmation.html"><button type="button" class="btn btn-primary purple-button" id="confirm-yes">Yes</button></a>
+                    <button type="button" class="btn btn-secondary purple-button" id="confirm-no" data-dismiss="modal" aria-hidden="true">No</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
